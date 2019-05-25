@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="utf-8">
+      <title>Hamburger</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <main>
+         <form name="" action="" id="form">
+            <fieldset>
+               <legend>Гамбургер</legend>
+               <div class="row">
+                  <p>Выберите размер гамбургера:</p>
+                  <div class="radio-variant">
+                     <input type="radio" name="size" id="small" value="small" checked/>
+                     <label for="small">Маленький</label>
+                  </div>
+                  <div class="radio-variant">
+                     <input type="radio" name="size" id="large" value="large" />
+                     <label for="large">Большой</label>
+                  </div>
+               </div>
+               <div class="row additions">
+                  <p>Начинки:</p>
+                  <div class="checkbox-variant">
+                     <input type="checkbox" name="add" id="cheese" value="cheese"/>
+                     <label for="cheese">Сыр</label>
+                  </div>
+                  <div class="checkbox-variant">
+                     <input type="checkbox" name="add" id="salad" value="salad"/>
+                     <label for="salad">Салат</label>
+                  </div>
+                  <div class="checkbox-variant">
+                     <input type="checkbox" name="add" id="potato" value="potato"/>
+                     <label for="potato">Картофель</label>
+                  </div>
+                  <p class="second_p">Дополнительно:</p>
+                  <div class="checkbox-variant">
+                     <input type="checkbox" name="add" id="flavoring" value="flavoring"/>
+                     <label for="flavoring">Приправа</label>
+                  </div>
+                  <div class="checkbox-variant">
+                     <input type="checkbox" name="add" id="mayonnaise_dressing" value="mayonnaise_ dressing"/>
+                     <label for="mayonnaise_dressing">Майонез</label>
+                  </div>
+               </div>
+               <div class="submit">
+                  <input type="submit" value="Make Order"/>
+               </div>
+            </fieldset>
+            <br/>
+            <div id="result">
+               <div><b>К оплате:</b> <span id="price">0</span> руб</div>
+               <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+            </div>
+         </form>
+      </main>
+      <script src="js/script.js"></script>
+   </body>
+</html>
